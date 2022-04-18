@@ -1,0 +1,123 @@
+/* Text */
+.underline {
+    width: 80%;
+    height: 3px;
+    background: var(--clr-primary);
+    margin: 0 auto;
+}
+
+.text-center {
+    display: block;
+    text-align: center;
+}
+
+/* Text Colors */
+.text-dark {
+    color: var(--clr-dark);
+}
+
+.text-light {
+    color: var(--clr-light);
+}
+
+.text-primary {
+    color: var(--clr-primary);
+}
+
+/* Margin & Padding */
+.my-1 {
+    margin: 1rem 0;
+}
+
+.my-2 {
+    margin: 1rem 0;
+}
+
+.my-3 {
+    margin: 1rem 0;
+}
+
+.my-4 {
+    margin: 1rem 0;
+}
+
+.my-5 {
+    margin: 1rem 0;
+}
+
+.p-1 {
+    padding: 1rem;
+}
+
+.p-2 {
+    padding: 2rem;
+}
+
+.p-3 {
+    padding: 3rem;
+}
+
+.p-4 {
+    padding: 4rem;
+}
+
+.p-5 {
+    padding: 5rem;
+}
+
+.py-1 {
+    padding: 1rem 0;
+}
+
+.py-2 {
+    padding: 1rem 0;
+}
+
+.py-3 {
+    padding: 1rem 0;
+}
+
+.py-4 {
+    padding: 1rem 0;
+}
+
+.py-5 {
+    padding: 1rem 0;
+}
+
+/* buttons */
+.btn {
+    min-width: 90px;
+    font-family: inherit;
+    appearance: none;
+    border: 0;
+    border-radius: 5px;
+    background: #4676d7;
+    color: #fff;
+    padding: 7px 14px;
+    font-size: .95rem;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #1d49aa;
+}
+
+.btn:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px #cbd6ee;
+}
+
+/* Box Model */
+.flex {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}

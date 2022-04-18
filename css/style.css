@@ -1,0 +1,140 @@
+/* Fotns */
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Nunito&family=Smooch+Sans:wght@300&display=swap');
+
+/* Variables And Base Styles */
+:root {
+    --clr-dark: #3b3b3b;
+    --clr-light: #e3e3e3;
+    --clr-primary: #007bff;
+    /* fonts */
+    --ff-primary: 'Lato', sans-serif;
+    --ff-secondary: 'Nunito', sans-serif;
+    --ff-thirdinary: 'Smooch Sans', sans-serif;
+    /* other */
+    --radius: .5rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    width: 100%;
+}
+@media (max-width: 1200px) {
+    img {
+        height: 175px!important;
+    }
+}
+@media (max-width: 800px) {
+    img {
+        height: 220px!important;
+    }
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* Main Styles */
+.header {
+    width: max-content;
+    margin: 5rem auto 2rem auto;
+    font-family: var(--ff-thirdinary);
+    font-size: 2rem;
+}
+
+.btn-container {
+    width: max-content;
+    margin: auto;
+    font-family: var(--ff-secondary);
+    gap: 0 10px;
+}
+
+.menu-items {
+    width: 85vw;
+    max-width: 1170px;
+    margin: 3rem auto;
+    gap: 3rem 2rem;
+    justify-content: center !important;
+}
+
+.menu-item {
+    max-width: 40rem;
+    grid-template-columns: 225px 1fr;
+    gap: 0 1.25rem;
+}
+
+.photo {
+    height: 150px;
+    border: .25rem solid #cbd6ee;
+    border-radius: var(--radius);
+    object-fit: cover;
+}
+
+.item-info header {
+    height: auto;
+    padding: 7px 7px 7px 0;
+    font-family: var(--ff-secondary);
+    font-size: 17px;
+    justify-content: space-between;
+    border-bottom: 2px dashed #cbd6ee;
+    border-right: 2px dashed #cbd6ee;
+    border-bottom-right-radius: 7px;
+}
+
+.item-text {
+    height: calc(100% - 45px);
+    font-family: var(--ff-primary);
+}
+
+/* Media Queries - Tablets And Under */
+@media (max-width: 1200px) {
+    .menu-items {
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+    .menu-item {
+        grid-template-columns: 270px 1fr;
+    }
+}
+
+/* Media Queries - Mobile */
+@media (max-width: 800px) {
+    h1 {
+        font-size: 1.5em;
+    }
+
+    .btn {
+        padding: 5px 10px;
+        font-size: .9rem;
+    }
+
+    .menu-item {
+        max-width: 25rem;
+        grid-template-columns: 1fr;
+        gap: 1rem 2rem;
+    }
+
+    .item-info h4 {
+        font-size: 16px;
+    }
+
+    .item-text {
+        font-size: 14px;
+        padding: 10px 0;
+    }
+}
